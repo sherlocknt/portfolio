@@ -19,7 +19,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    
+
                     <li class="nav-item">
                         <a class="text-light nav-link" href="index.php">Home</a>
                     </li>
@@ -33,6 +33,13 @@
             </div>
         </div>
     </nav>
+
+    <ul class="list-group">
+        <li class="list-group-item bg-dark text-light">Instagram - <a class="text-light text-decoration-none" href="https://instagram.com/jshfcnl" target="_blank">@jshfcnl</a></li>
+        <li class="list-group-item bg-dark text-light">Tiktok - <a class="text-light text-decoration-none" href="https://www.tiktok.com/@jshfcnl" target="_blank">@jshfcnl</li>
+        <li class="list-group-item bg-dark text-light">Artstation - <a class="text-light text-decoration-none" href="https://www.artstation.com/joshuafacunla" target="_blank">Joshua Facunla</li>
+        <li class="list-group-item bg-dark text-light">Sketchfap - <a class="text-light text-decoration-none" href="https://www.sketchfab.com/joshuafacunla" target="_blank">Joshua Facunla</li>                
+    </ul>
 
 </body>
 

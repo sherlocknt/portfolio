@@ -100,3 +100,13 @@ img {
       width: 100%;
     }
 }
+
+.center {
+  margin: auto !important;
+  width: 50% !important;
+  /* border: 3px solid green; */
+  padding: 10px !important;
+  text-align: center;
+}
+#vid {
+}

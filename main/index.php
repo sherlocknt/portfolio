@@ -19,7 +19,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    
+
                     <li class="nav-item">
                         <a class="text-light nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
@@ -34,6 +34,12 @@
         </div>
     </nav>
 
+    <div class="container center">
+        <video id="vid" src="../assets/vids/mr2.mp4" class="object-fit-fill" type="video/mp4" autoplay loop muted></video>
+    </div>
+    <script>
+        document.getElementById('vid').play();
+    </script>
 </body>
 
 </html>
