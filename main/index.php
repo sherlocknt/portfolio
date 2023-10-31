@@ -14,26 +14,25 @@
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo" src="../assets/JF_white.png" alt="asd"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="text-light nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="text-light nav-link active" aria-current="page" href="index.php"><p class=" hoverAnim">Home</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="gallery.php">Gallery</a>
+                        <a class="text-light nav-link" href="gallery.php"><p class=" hoverAnim">Gallery</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="socials.php">Socials</a>
+                        <a class="text-light nav-link" href="socials.php"><p class=" hoverAnim">Socials</p></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <div class="container center">
         <video id="vid" src="../assets/vids/mr2.mp4" class="object-fit-fill" type="video/mp4" autoplay loop muted></video>
     </div>
