@@ -213,7 +213,7 @@ a {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: rgba(255, 0, 0, 0.233);
+  background-color: rgba(255, 255, 255, 0.075);
   /* Set a background color */
   color: white;
   /* Text color */
@@ -228,6 +228,10 @@ a {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: rgba(255, 104, 104, 0.726);
   /* Add a dark-grey background on hover */
+}
+
+.arrowUP {
+  color: white !important;
 }

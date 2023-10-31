@@ -13,7 +13,7 @@
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="../assets/JF_white.png" alt="asd"></a>
+            <a class="navbar-brand" href="#"><img class="logo" src="../assets/img/JF_white.png" alt="asd"></a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </nav>
-    <p class="text-center text-light text-uppercase fw-bolder">Socials</p>
+    <p class="text-center text-light text-uppercase fw-bolder fs-2">Socials</p>
     <ul class="list-group">
         <li class="list-group-item bg-dark text-light">Instagram - <a class="text-light text-decoration-none" href="https://instagram.com/jshfcnl" target="_blank">@jshfcnl</a></li>
         <li class="list-group-item bg-dark text-light">Tiktok - <a class="text-light text-decoration-none" href="https://www.tiktok.com/@jshfcnl" target="_blank">@jshfcnl</li>
