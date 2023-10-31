@@ -39,6 +39,7 @@
     <script>
         document.getElementById('vid').play();
     </script>
+    <?php ?>
 </body>
 
 </html>

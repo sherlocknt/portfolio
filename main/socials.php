@@ -40,6 +40,7 @@
         <li class="list-group-item bg-dark text-light">Artstation - <a class="text-light text-decoration-none" href="https://www.artstation.com/joshuafacunla" target="_blank">Joshua Facunla</li>
         <li class="list-group-item bg-dark text-light">Sketchfap - <a class="text-light text-decoration-none" href="https://www.sketchfab.com/joshuafacunla" target="_blank">Joshua Facunla</li>
     </ul>
+    <?php ?>
 
 </body>
 
