@@ -21,13 +21,13 @@
                 <ul class="navbar-nav">
                     
                     <li class="nav-item">
-                        <a class="text-light nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="text-light nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="text-light nav-link" href="gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="socials.php">Socials</a>
+                        <a class="text-light nav-link active" aria-current="page" href="socials.php">Socials</a>
                     </li>
                 </ul>
             </div>
