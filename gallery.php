@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../style/index.css">
-    <link rel="icon" type="image/x-icon" href="../assets/icon/jf.ico">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon/jf.ico">
     <title>Gallery</title>
 </head>
 
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="../assets/img/JF_white.png" alt="asd"></a>
+            <a class="navbar-brand" href="#"><img class="logo" src="assets/img/JF_white.png" alt="JF Logo"></a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,10 +36,10 @@
     <p class="text-center text-light text-uppercase fw-bolder fs-2">Gallery</p>
     <section class="photo-grid-container">
         <?php
-        $all_files = glob("../renders/*.*");
+        $all_files = glob("renders/*.*");
         for ($i = 0; $i < count($all_files); $i++) {
             $image_n = $all_files[$i];
-            $remove = ["../renders/", ".png", ".jpg"];
+            $remove = ["renders/", ".png", ".jpg"];
             $image_name = str_replace($remove, '', $image_n);
             echo '<div class="photo-grid-item">';
             echo '<div class="textt">'. $image_name .'</div>';
@@ -82,7 +82,7 @@
         }
         ?>
     </section>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="arrowUP" src="../assets/svg/arrow-up.svg" alt=""></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="arrowUP" src="assets/svg/arrow-up.svg" alt=""></button>
     <script>
         // Get the button:
         let mybutton = document.getElementById("myBtn");
