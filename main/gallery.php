@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style/index.css">
-
+    <link rel="icon" type="image/x-icon" href="../assets/icon/jf.ico">
     <title>Gallery</title>
 </head>
 
@@ -20,15 +20,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="index.php">Home</a>
+                        <a class="text-light nav-link" href="index.php"><p class=" hoverAnim">Home</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link active" aria-current="page" href="gallery.php">Gallery</a>
+                        <a class="text-light nav-link active" aria-current="page" href="gallery.php"><p class=" hoverAnim">Gallery</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="socials.php">Socials</a>
+                        <a class="text-light nav-link" href="socials.php"><p class=" hoverAnim">Socials</p></a>
                     </li>
                 </ul>
             </div>
@@ -43,6 +42,7 @@
             $remove = ["../renders/", ".png", ".jpg"];
             $image_name = str_replace($remove, '', $image_n);
             echo '<div class="photo-grid-item">';
+            echo '<div class="textt">'. $image_name .'</div>';
             echo '<img class="scrimg" src="' . $image_n . '" alt="' . $image_name . '" id="' . $image_name . '" />' . "<br /><br />";
             echo '</div>';
             // echo $imgs = str_replace('../renders/', '', $image_name);

@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style/index.css">
+    <link rel="icon" type="image/x-icon" href="../assets/icon/jf.ico">
     <title>Socials</title>
 </head>
 
@@ -21,13 +22,13 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="index.php">Home</a>
+                        <a class="text-light nav-link" href="index.php"><p class=" hoverAnim">Home</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="gallery.php">Gallery</a>
+                        <a class="text-light nav-link" href="gallery.php"><p class=" hoverAnim">Gallery</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link active" aria-current="page" href="socials.php">Socials</a>
+                        <a class="text-light nav-link active" aria-current="page" href="socials.php"><p class=" hoverAnim">Socials</p></a>
                     </li>
                 </ul>
             </div>
