@@ -1,0 +1,36 @@
+.ripple-btn{
+  text-decoration:none;
+  background-color:#5c6e90;
+  color:#fff;
+  padding:20px 20px;
+  border-radius:50%;
+  font-family:verdana;
+  font-size:20px;
+  text-transform:capitalize;
+  cursor:pointer;
+  overflow:hidden;
+  position:relative;
+}
+
+.ripple-btn span{
+  position:absolute;
+  background-color:#fff;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  pointer-events:none;
+  animation: rippleEffect 1.5s 1;
+}
+
+@keyframes rippleEffect{
+  from{
+    width:0; 
+    height:0;
+    opacity:0.7;
+  }
+  
+  to{
+    width:500px;
+    height:500px;
+    opacity:0;
+  }
+}

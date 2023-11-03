@@ -85,11 +85,9 @@ $resulta = $conn->query($sqla);
             // echo '</div>';
             $remove = ["renders/", ".png", ".jpg"];
             $image_name = str_replace($remove, '', $row['image_url']);
-            
         ?>
 
             <div class="masonry-item">
-                <?php echo '<button data-image-id="' . $row['id'] . '" class="btn btn-dark textt pulse-single"><i class="bi bi-heart"></i></button>';?>
                 <?php echo '<img class="render" src="' . $row['image_url'] . '" alt="' . $image_name . '" id="' . $image_name . '">'; ?>
                 <span>
                     <div class="row justify-content-between">
@@ -100,7 +98,7 @@ $resulta = $conn->query($sqla);
                             <?php
                             echo '<div class="image-item">';
                             echo '<div class="like-button-container">';
-                            
+                            echo '<button data-image-id="' . $row['id'] . '" class="btn btn-dark"><i class="bi bi-hand-thumbs-up"></i></button>';
                             echo '<span class="likes-count">' . $row['likes'] . ' likes</span>';
                             echo '</div>';
                             echo '</div>';
