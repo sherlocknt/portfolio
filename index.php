@@ -22,13 +22,24 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="text-light nav-link active" aria-current="page" href="index.php"><p class=" hoverAnim">Home</p></a>
+                        <a class="text-light nav-link active" aria-current="page" href="index.php">
+                            <p class=" hoverAnim" style="font-family: opensansB !important;">Home</p>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="gallery.php"><p class=" hoverAnim">Gallery</p></a>
+                        <a class="text-light nav-link" href="gallery.php">
+                            <p class=" hoverAnim">Gallery</p>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-light nav-link" href="socials.php"><p class=" hoverAnim">Socials</p></a>
+                        <a class="text-light nav-link" href="socials.php">
+                            <p class=" hoverAnim">Socials</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-light nav-link" href="models.php">
+                            <p class=" hoverAnim">3D Models</p>
+                        </a>
                     </li>
                 </ul>
             </div>

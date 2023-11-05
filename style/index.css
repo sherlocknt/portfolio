@@ -1,3 +1,23 @@
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/OpenSans.ttf);
+}
+
+@font-face {
+  font-family: opensansL;
+  src: url(../fonts/OpenSansLight.ttf);
+}
+
+@font-face {
+  font-family: opensansB;
+  src: url(../fonts/OpenSansBold.ttf);
+}
+
+@font-face {
+  font-family: NeusharpBold;
+  src: url(../fonts/NeusharpBold.otf);
+}
+
 img {
   width: 100%;
 }
@@ -52,7 +72,8 @@ img {
 
 .active {
   color: #ff91a4 !important;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-family: opensansB !important;
 }
 
 a {
@@ -170,6 +191,7 @@ a {
   display: inline-block;
   padding: 15px 20px;
   position: relative;
+  font-family: opensansL !important;
 }
 
 .hoverAnim:after {
@@ -252,6 +274,14 @@ a {
   border-radius: 50% !important;
 }
 
+.texttt {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  color: #ccc;
+}
+
 .likebtn {
   z-index: 1;
   position: absolute;
@@ -278,14 +308,17 @@ a {
   /* padding-top: 2px; */
 }
 
-.masonry-container {
-  -webkit-column-count: 5;
-  -moz-column-count: 5;
-  column-count: 5;
+@media screen and (min-width: 1024px) {
+  .masonry-container {
+    margin: 2em 5em 2em 5em;
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    column-count: 6;
 
-  -webkit-column-gap: 15px;
-  -moz-column-gap: 15px;
-  column-gap: 15px;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 10px;
+  }
 }
 
 .masonry-item {
@@ -311,20 +344,40 @@ a {
 }
 
 .masonry-item {
-  
+
   /* border: 1px solid #ccc; */
   border-radius: 1em;
   /* background-color: rgb(20, 20, 20); */
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
   .masonry-container {
+    margin: 0.5em 1em 0.1em 1em;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
   }
 }
-@media only screen and (max-width: 1000px) {
+
+@media screen and (min-width:767px) and (max-width: 1024px) {
+  .masonry-container {
+    margin: 1em 1em 1em 1em;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1280px) {
+  .masonry-container {
+    margin: 1em 1em 1em 1em;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .col-4 {
     font-size: small;
   }
@@ -341,16 +394,87 @@ span {
 
 @keyframes pulse {
   from {
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0),
-          0 0 0 0 rgba(51, 51, 51, 1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0),
+      0 0 0 0 rgba(51, 51, 51, 1);
   }
 
   to {
-      box-shadow: 0 0 0 0.65em rgba(255, 255, 255, 0),
-          0 0 0 1em rgba(51, 51, 51, 0);
+    box-shadow: 0 0 0 0.65em rgba(255, 255, 255, 0),
+      0 0 0 1em rgba(51, 51, 51, 0);
   }
 }
 
 .pulse-single:active {
   animation: pulse 0.2s 1 ease-out;
+}
+
+.img_nm, .gal {
+  font-family: NeusharpBold;
+}
+
+.likes-count {
+  color: grey;
+}
+
+.hide {
+  display: none;
+  z-index: 0;
+  position: absolute;
+  transition: top ease 1s;
+  color: white !important;
+}
+
+.btn:active+.hide {
+  display: block;
+  color: white !important;
+  top: 0px;
+}
+
+/* #particle-area {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.particle {
+  z-index: 2;
+  position: absolute;
+  margin-top: 0.5em;
+  margin-left: 1.5em;
+  width: 30px;
+  height: 30px;
+  animation: particle-animation 2s ease-out;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+  
+}
+
+@keyframes particle-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+} */
+
+.hart {
+  z-index: 1;
+  position: absolute;
+  margin-top: -1em;
+  /* margin-left: 0.4em; */
+  color: #ff91a4;
+  /* text-shadow: 2px 2px 2px black; */
+  /* vertical-align:top; */
+  /* font-weight: 800; */
+  justify-content: space-between;
+  text-align: right !important;
+  border-radius: 50% !important;
 }
