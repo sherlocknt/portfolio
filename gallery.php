@@ -110,6 +110,8 @@ $resulta = $conn->query($sqla);
             // echo '</div>';
             $remove = ["renders/", ".png", ".jpg"];
             $image_name = str_replace($remove, '', $row['image_url']);
+            $ran = rand(-50, 50);
+            $ran2 = rand(-50, 50);
 
         ?>
             <div class="masonry-item" id="<?php echo $id; ?>">
@@ -139,14 +141,15 @@ $resulta = $conn->query($sqla);
 
                     @keyframes particle-animation {
                         0% {
-                            transform: translate(-50%, -50%) scale(0);
+                            transform: translate(-50%, -50%) scale(0) rotateZ(<?php echo $ran; ?>deg);
                             opacity: 1;
                         }
 
                         100% {
-                            transform: translate(-50%, -50%) scale(1);
+                            transform: translate(-50%, -50%) scale(1) rotateZ(<?php echo $ran2; ?>deg);
                             opacity: 0;
                         }
+
                     }
                 </style>
                 <!-- <h1 class='hart'>❤️</h1> -->
@@ -213,7 +216,7 @@ $resulta = $conn->query($sqla);
                     function createParticle(parentElement<?php echo $id; ?> = document.body) {
                         const particle<?php echo $id; ?> = document.createElement("div");
                         particle<?php echo $id; ?>.classList.add("particle<?php echo $id; ?>");
-                        particle<?php echo $id; ?>.innerHTML = "<h1 class='hart'>❤️</h1>";
+                        particle<?php echo $id; ?>.innerHTML = "<h1 class='hart'><i class='bi bi-heart-fill'></i></h1>";
                         if (parentElement<?php echo $id; ?>) {
                             parentElement<?php echo $id; ?>.append(particle<?php echo $id; ?>);
                             // alert("I am an alert box!");
